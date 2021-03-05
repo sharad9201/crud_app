@@ -61,7 +61,7 @@ a{
 }
 
 #header nav{
-    background-color: #06d640;
+    background-color: #C2191f;
     padding: 1em 0;
     width: 100%;
 }
@@ -96,7 +96,7 @@ table{
 
 }
 .table tr:hover{
-    background-color: #06d6a0;
+    background-color: #ffcccb;
 }
 .table tr:hover td>a{
     box-shadow: none;
@@ -105,4 +105,21 @@ table{
     color: #fff;
     background-color: var(--dark);
     border-color: #32383e;
+}
+@media only screen and (max-width: 1024px){
+    table,thead,tbody,th,td,tr{
+        display:block;
+    }
+    thead tr{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    tr{border: 1px solid var(--border);}
+
+    td{
+        border:none;
+        position: relative;
+    }
+
 }
